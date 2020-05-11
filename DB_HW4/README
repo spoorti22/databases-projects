@@ -1,0 +1,73 @@
+------------------------------README-------------------------------------
+Question 1:
+
+Linear Regression Model
+class =
+	-0.1084 * CRIM +
+ 	0.0458 * ZN +
+	2.7187 * CHAS=1 +
+	-17.376  * NOX +
+	3.8016 * RM +
+	-1.4927 * DIS +
+	0.2996 * RAD +
+	-0.0118 * TAX +
+	-0.9465 * PTRATIO +
+	0.0093 * B +
+	-0.5226 * LSTAT +
+	36.3411
+There are 12 terms in the linear regression equation: 11 attributes(CRIM, ZN, CHAS=1, NOX, RM, DIS, RAD, TAX, PTRATIO, B, LSTAT) with their coefficients and one constant term(intercept) in the linear equation.
+
+The above equation consists of attributes CRIM, ZN, CHAS=1, NOX, RM, DIS, RAD, TAX, PTRATIO, B, LSTAT along with an intercept. 
+INDUS and AGE attributes don't appear in the resulting linear regression equation as we know that Weka can detect and remove highly correlated input attributes automatically by setting eliminateColinearAttributes to True which is the default as the performance of linear regression can be reduced if your training data has input attributes that are highly correlated and additionally, attributes that are unrelated to the output variable can also negatively impact performance. Weka can also automatically perform feature selection to only select those relevant attributes by setting the attributeSelectionMethod. This is enabled by default and can be disabled. 
+Hence, coefficients for AGE and INDUS happen to be close to 0 due to which they don't influence in the prediction and don't appear in the equation.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Question 2:
+
+Lowest RMSE for the Multilayer perceptron: 2.5856 by setting learning rate=0.2 & momentum=0.1
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Question 3:
+
+Linear Regression Model
+num_rings = 
+	-0.825 * sex=I +
+	0.058 * sex=M +
+	-0.458 * length +
+	11.075 * diameter +
+	10.762 * height +
+	8.975 * whole_weight +
+	-19.787 * shucked_weight +
+	-10.582 * viscera_weight +
+	8.742 * shell_weight +
+	3.895
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Question 5:
+
+Total # of clusters: 6
+
+The # of data points in each cluster:
+Cluster 0:	1388 items
+Cluster 1:	499 items
+Cluster 2:	448 items
+Cluster 3:	22 items
+Cluster 4:	172 items
+Cluster 5:	1648 items
+Total number of items:	4177
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Question 6:
+
+Linear Regression Model
+num_rings =
+	- 11.933 * length
+	+ 25.766 * diameter
+	+ 20.358 * height
+	+ 2.836
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+

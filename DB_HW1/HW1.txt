@@ -1,0 +1,30 @@
+CSCI585 - HOMEWORK1 - 6623872311 - SPOORTI SANJEEV NIDAGUNDI
+--------------------------------------------------------------------------------
+
+					README
+--------------------------------------------------------------------------------
+
+Below are the assumptions taken into consideration for the design of the attached ER diagram:
+
+1. Due to the m:n relationship between Student, Project and Coding Class, I have created a new bridge entity called ENROLL, wherein the assumption is that each
+Student needs to be a part of both coding class and a project. 
+
+2. ROOM_NUM attribute acting as the foreign key in CODING_CLASS and PROJECT entity helps the student to understand where the class/project will be held and the attributes: PROJECT_TIME AND CLASS_TIME
+help in informing the student the time slot for the same. 
+
+3. The attribute MITOCONTROL_TYPE is an enum with values given in the question. Also, the attribute CODING_LANG is an enum with the programming languages specified in the question. 
+
+4. In order to make sure each project has only 4 students, where in there is restriction placed on the attribute: NUM_OF_STUDENTS to make sure only 4 students are a part of a group. 
+
+5. Vendors and suppliers both independently supply the project parts for an order. 
+
+6. An instructor is both required to supervise a project and teach a coding class. 
+
+7. Project has a project parts and every part is uniquely identified by a part ID. Different set of project parts are combined and allocated to different projects. Every project group based on 
+the type of the project( based on this value: MITOCONTROL_TYPE) has different project parts which is hence placed in a storage box in a designated table. Every different project has different set of project parts that are furnished by orders placed to suppliers and vendors. 
+
+8. Each class has a class name wherein it specifies the coding language taught in that class and hence each student rates a coding class, instructor and a project. The value score is which specifies the rating given by each student and the value score has restrictions placed in order to score from 1-5 stars only. 
+
+9. The num of books borrowed from the library are restricted to 4 by placing restrictions
+On the attribute. 
+

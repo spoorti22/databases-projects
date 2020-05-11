@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+<Style id="z1">
+<IconStyle>
+	<Icon>
+		<href>http://www.google.com/intl/en_us/mapfiles/ms/micons/blue-dot.png</href>
+	</Icon>
+</IconStyle>
+</Style>
+<Style id="z2">
+<IconStyle>
+  <Icon>
+    <href>http://www.google.com/intl/en_us/mapfiles/ms/micons/red-dot.png</href>
+  </Icon>
+</IconStyle>
+</Style>
+<Style id="z3">
+<IconStyle>
+  <Icon>
+    <href>http://www.google.com/intl/en_us/mapfiles/ms/micons/yellow-dot.png</href>
+  </Icon>
+</IconStyle>
+</Style>
+<Style id="transBluePoly">
+      <LineStyle>
+        <width>1.5</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7dff0000</color>
+      </PolyStyle>
+ </Style>
+ <Style id="yellow">
+      <LineStyle>
+        <width>2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>5014f0dc</color>
+      </PolyStyle>
+ </Style>
+<Folder>
+<name>Libraries</name>
+<Placemark>
+	<name>Leavey</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.282948,34.021864</coordinates></Point>
+</Placemark>
+<Placemark>
+	<name>VKC</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.284024,34.021427</coordinates></Point>
+</Placemark>
+<Placemark>
+	<name>Doheny</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.283755,34.020225</coordinates></Point>
+</Placemark>
+<Placemark>
+	<name>ScienceAndEngg</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.288798,34.019843</coordinates></Point>
+</Placemark>
+<Placemark>
+	<name>Hoose</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.286616,34.018940</coordinates></Point>
+</Placemark>
+</Folder>
+<Folder>
+<name>Cafes</name>
+<Placemark>
+	<name>TutorHall</name>
+<styleUrl>#z2</styleUrl><Point><coordinates>-118.289994,34.020064</coordinates></Point>
+</Placemark>
+<Placemark>
+	<name>Starbucks</name>
+<styleUrl>#z2</styleUrl><Point><coordinates>-118.282182,34.021697</coordinates></Point>
+</Placemark>
+<Placemark>
+	<name>CoffeeBean</name>
+<styleUrl>#z2</styleUrl><Point><coordinates>-118.286299,34.020208</coordinates></Point>
+</Placemark>
+<Placemark>
+	<name>Lemonade</name>
+<styleUrl>#z2</styleUrl><Point><coordinates>-118.286133,34.020615</coordinates></Point>
+</Placemark>
+<Placemark>
+	<name>LittleGalen</name>
+<styleUrl>#z2</styleUrl><Point><coordinates>-118.287092,34.022892</coordinates></Point>
+</Placemark>
+</Folder>
+<Folder>
+<name>Buildings</name>
+<Placemark>
+	<name>HancockFnd</name>
+<styleUrl>#z3</styleUrl><Point><coordinates>-118.284978,34.019731</coordinates></Point>
+</Placemark>
+<Placemark>
+	<name>MichelsonHall</name>
+	<category>Building</category>
+<styleUrl>#z3</styleUrl><Point><coordinates>-118.289284,34.021957</coordinates></Point>
+</Placemark>
+<Placemark>
+	<name>WallisAnnenberg</name>
+<styleUrl>#z3</styleUrl><Point><coordinates>-118.287112,34.020903</coordinates></Point>
+</Placemark>
+<Placemark>
+	<name>MuddHall</name>
+<styleUrl>#z3</styleUrl><Point><coordinates>-118.286869,34.018799</coordinates></Point>
+</Placemark>
+<Placemark>
+	<name>ViterbiSchool</name>
+<styleUrl>#z3</styleUrl><Point><coordinates>-118.289326,34.020595</coordinates></Point>
+</Placemark>
+</Folder>
+<Placemark>
+      <name>Convex Hull</name>
+      <styleUrl>#transBluePoly</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <extrude>1</extrude>
+          <altitudeMode>relativeToGround</altitudeMode>
+            <coordinates> 
+             -118.286869,34.018799,70
+             -118.289994,34.020064,70
+             -118.289284,34.021957,70
+             -118.287092,34.022892,70
+             -118.282182,34.021697,70
+             -118.283755,34.020225,70
+             -118.286869,34.018799,70
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+</Placemark> 	
+<Placemark>
+      <name>knn neighbour1</name>
+      <styleUrl>#yellow</styleUrl>
+      <LineString>
+        <extrude>1</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates>
+          -118.289284,34.021957,90  
+          -118.289326,34.020595,90
+        </coordinates>
+      </LineString>
+    </Placemark>
+
+    <Placemark>
+      <name>knn neighbour2</name>
+      <styleUrl>#yellow</styleUrl>
+      <LineString>
+        <extrude>1</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates>
+          -118.289284,34.021957,90  
+          -118.289994,34.020064,90
+        </coordinates>
+      </LineString>
+    </Placemark>
+
+    <Placemark>
+      <name>knn neighbour3</name>
+      <styleUrl>#yellow</styleUrl>
+      <LineString>
+        <extrude>1</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates>
+          -118.289284,34.021957,90
+          -118.288798,34.019843,90
+        </coordinates>
+      </LineString>
+    </Placemark>
+
+    <Placemark>
+      <name>knn neighbour4</name>
+      <styleUrl>#yellow</styleUrl>
+      <LineString>
+        <extrude>1</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates>
+          -118.289284,34.021957,90  
+          -118.287092,34.022892,90
+        </coordinates>
+      </LineString>
+    </Placemark>
+</Document></kml>
